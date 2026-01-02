@@ -8,7 +8,13 @@ const ttt = require('./cropSchema');
 connectdb();
 
 const app=express();
-app.use(cors())
+
+   
+app.use(cors({
+  origin: "https://esallon.netlify.app"
+}));
+
+ 
 app.use(express.json())
 
 
